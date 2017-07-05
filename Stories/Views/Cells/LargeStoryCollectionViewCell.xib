@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LargeStoryCollectionViewCell" id="Sih-E5-FCx" customClass="LargeStoryCollectionViewCell" customModule="Stories" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="258"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="258"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beachScene" translatesAutoresizingMaskIntoConstraints="NO" id="QX2-kA-1rQ">
+                        <rect key="frame" x="0.0" y="0.0" width="347" height="258"/>
+                    </imageView>
+                    <view alpha="0.34999999999999998" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="dnA-MH-QQu" userLabel="mask">
+                        <rect key="frame" x="0.0" y="0.0" width="347" height="258"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancun Spring Break" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="CqK-y3-R4r">
+                        <rect key="frame" x="32" y="111" width="283" height="36"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dnA-MH-QQu" secondAttribute="bottom" id="06x-zJ-glX"/>
+                <constraint firstAttribute="bottom" secondItem="QX2-kA-1rQ" secondAttribute="bottom" id="433-3l-9fe"/>
+                <constraint firstAttribute="trailing" secondItem="QX2-kA-1rQ" secondAttribute="trailing" id="4Ta-Iy-dFy"/>
+                <constraint firstItem="dnA-MH-QQu" firstAttribute="leading" secondItem="Sih-E5-FCx" secondAttribute="leading" id="7F6-ph-BvB"/>
+                <constraint firstItem="CqK-y3-R4r" firstAttribute="leading" secondItem="Sih-E5-FCx" secondAttribute="leading" constant="32" id="I91-PE-BRq"/>
+                <constraint firstAttribute="trailing" secondItem="dnA-MH-QQu" secondAttribute="trailing" id="Wti-ZK-LnP"/>
+                <constraint firstAttribute="trailing" secondItem="CqK-y3-R4r" secondAttribute="trailing" constant="32" id="Yel-ar-el9"/>
+                <constraint firstItem="CqK-y3-R4r" firstAttribute="centerX" secondItem="Sih-E5-FCx" secondAttribute="centerX" id="d7Y-fg-e8r"/>
+                <constraint firstItem="QX2-kA-1rQ" firstAttribute="leading" secondItem="Sih-E5-FCx" secondAttribute="leading" id="dnK-0p-wgO"/>
+                <constraint firstItem="QX2-kA-1rQ" firstAttribute="top" secondItem="Sih-E5-FCx" secondAttribute="top" id="ez2-kQ-bfv"/>
+                <constraint firstItem="dnA-MH-QQu" firstAttribute="top" secondItem="Sih-E5-FCx" secondAttribute="top" id="iqZ-Cr-J37"/>
+                <constraint firstItem="CqK-y3-R4r" firstAttribute="centerY" secondItem="Sih-E5-FCx" secondAttribute="centerY" id="szc-Ua-hUc"/>
+            </constraints>
+            <size key="customSize" width="347" height="258"/>
+            <connections>
+                <outlet property="mainImage" destination="QX2-kA-1rQ" id="uar-8k-iHb"/>
+                <outlet property="mainLabel" destination="CqK-y3-R4r" id="rTD-x3-v9B"/>
+            </connections>
+            <point key="canvasLocation" x="134.5" y="-439"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="beachScene" width="1280" height="800"/>
+    </resources>
+</document>
